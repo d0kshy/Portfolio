@@ -1,8 +1,51 @@
 body {
     /* background-image: linear-gradient(#0b1214, #28424b); */ 
+    background-color: #000;
     color: aliceblue;
     font-family: 'Ubuntu Sans Mono';
+
+}
+
+header {
+    height: 100px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.home {
+    background-color: #000000;
+    height: 750px;
+    width: 1895px;
+    color: aliceblue;
+    font-size: 136px;
+    font-weight: 700;
+}
+
+.greeting {
+    margin: 180px 0 0 300px;
+}
+
+.name{
+    color: rgb(145, 210, 231);
+}
+
+.occupation {
+    margin: 20px 0 0 300px;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.about {
+    background-color: #000000;
+    height: 750px;
+    width: 1895px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio {
+    font-size: 20px;
 }
