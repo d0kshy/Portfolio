@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Daria Kurnosova - FullStack Developer</title>
 </head>
 <body>
@@ -11,11 +15,8 @@
     <!-- logo and navigation -->
     <header>
         <!-- logo -->
-        <a href="#">
-            <img src="./images/resume-logo.svg" alt="Daria Kurnosova - FullStack Developer">
-        </a>
-        <!-- navigation -->
-        <nav>
+        <!-- side div -->
+        <nav class="side-bar">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Me</a></li>
@@ -23,15 +24,16 @@
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+
         </nav>
     </header>
 
-    <main>
+    <main class="content">
         <!-- Home -->
         <section>
-            <p>Hi there, </p>
-            <p>I'm <span>Daria</span> and I'm a</p>
-            <p><span>fullstack developer</span></p>
+            <p class="greeting">Hi there, </p>
+            <p class="greeting">I'm <span class="subgreeting">Daria</span> and I'm a</p>
+            <p class="greeting"><span class="subgreeting">Python Developer</span></p>
             <!-- <img src="./images/IMG_6406_1.JPG" alt="Daria Kurnosova"> -->
         </section>
 
@@ -40,7 +42,7 @@
         <h2><span>About me</span></h2>
         <p><span>who am i?</span></p>
         <p>
-            Hi, I am Daria! I am a student at 
+            I am a student at 
             <a href="https://www.pk.edu.pl/index.php?lang=en&template=pk18-tpl" target="_blank">Cracow University of Technology</a> 
             and at 
             <a href="https://stu.cn.ua/en/" target="_blank">Chernihiv National University of Technology</a>.
@@ -66,7 +68,6 @@
             <a href="mailto:kurnosovadaria.contact@gmail.com">kurnosovadaria.contact@gmail.com</a>
         </section>
     </main>
-
     <footer>
         <p><a href="https://www.facebook.com/profile.php?id=61552447314253" target="_blank">Facebook</a></p>
         <p><a href="https://www.instagram.com/dokshy.ph/" target="_blank">Instagram</a></p>
