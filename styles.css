@@ -1,10 +1,110 @@
-body {
-    /* background-image: linear-gradient(#0b1214, #28424b); */ 
-    background-color: #000;
-    color: aliceblue;
-    font-family: 'Ubuntu Sans Mono';
-
+/* *, 
+*::after, 
+*::before {
+    box-sizing: border-box;
 }
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+
+    width: max-content;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.burger-menu::before, 
+.burger-menu::after,
+.burger-menu input {
+    content: "";
+    width: 60px;
+    height: 8px;
+    border-radius: 100px;
+    background:aliceblue;
+}
+
+.burger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+.sidebar {
+    translate: -100%;
+    background-color: rgb(145, 210, 231);
+    color: aliceblue;
+    padding: 0.5rem 1rem;
+    padding-top: 80px;
+    max-width: 25rem;
+    height: 100vh;
+}
+
+.sm-icons {
+    height: 40px;
+    width: 40px;
+}
+ */
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu Sans Mono';
+    min-height: 1000vh;
+    background-color: #000000;
+    color: aliceblue;
+}
+
+.bubbles-container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index:-1;
+    background-color: transparent;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+    background-color: transparent;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: aliceblue;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(21, 55, 85),
+    0 0 50px aliceblue,
+    0 0 100px aliceblue;
+    animation: animate 8s linear infinite;
+    animation-duration: calc(120s/var(--i));
+}
+
+@keyframes animate{
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(0.5);
+    }
+}
+
+
 
 header {
     height: 100px;
